@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarAID Suite - Starcat, Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .product-logo { text-align: center; margin: 20px 0 30px; }
+    .product-logo img { max-height: 80px; display: inline-block; }
+    .product-logo-text { font-size: 36px; font-weight: 900; color: #0062cc; letter-spacing: -1px; }
+    .product-logo-sub { font-size: 12px; color: #888; letter-spacing: 2px; margin-top: 4px; }
+    .release-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff3cd; color: #856404; padding: 6px 14px;
+      border-radius: 20px; font-size: 13px; margin-bottom: 24px;
+    }
+    .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    @media(max-width:600px){ .features-grid { grid-template-columns: 1fr; } }
+    .char-list { display: flex; flex-direction: column; gap: 10px; margin: 16px 0; }
+    .char-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 14px; background: #f0f4ff; border-radius: 6px; font-size: 14px; color: #333;
+    }
+    .char-item::before { content: "✓"; color: #0062cc; font-weight: 700; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="../index.html" class="navbar-logo">
+      <img src="../assets/images/logo.png" alt="Starcat" onerror="this.outerHTML='<span style=\'font-size:22px;font-weight:700;color:#0062cc;\'>Starcat</span>'" />
+      <img src="../assets/images/venture_logo.png" alt="벤처확인기업" onerror="this.remove()" style="height:28px;" />
+    </a>
+    <button class="navbar-toggle" id="navToggle">&#9776;</button>
+    <ul class="navbar-menu" id="navMenu">
+      <li><a href="#">회사소개</a>
+        <ul class="dropdown">
+          <li><a href="ab01.html">기업소개</a></li>
+          <li><a href="ab02.html">CEO 인사말</a></li>
+          <li><a href="ab03.html">회사 연혁</a></li>
+          <li><a href="ab04.html">오시는 길</a></li>
+        </ul>
+      </li>
+      <li><a href="#">제품</a>
+        <ul class="dropdown">
+          <li><a href="pd01.html" class="active">StarAID Suite</a></li>
+          <li><a href="pd02.html">StarAID SEMP</a></li>
+          <li><a href="pd03.html">StarAID IDP</a></li>
+        </ul>
+      </li>
+      <li><a href="#">서비스</a>
+        <ul class="dropdown">
+          <li><a href="se01.html">AI 데이터 분석 및 서비스 개발</a></li>
+          <li><a href="se02.html">AI 컨설팅 및 교육</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PR</a>
+        <ul class="dropdown">
+          <li><a href="pr01.html">스타캣 소식</a></li>
+          <li><a href="pr02.html">언론홍보</a></li>
+        </ul>
+      </li>
+      <li><a href="#">채용</a>
+        <ul class="dropdown"><li><a href="rc01.html">채용공고</a></li></ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <img class="bg" src="../assets/images/page_header_bg.jpg" alt="" onerror="this.remove()" />
+  <h1>제품</h1>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">HOME</a><span>›</span>
+  <a href="#">제품</a><span>›</span>
+  <strong>StarAID Suite</strong>
+</div>
+
+<div class="page-nav">
+  <div class="page-nav-inner">
+    <a href="pd01.html" class="active">StarAID Suite</a>
+    <a href="pd02.html">StarAID SEMP</a>
+    <a href="pd03.html">StarAID IDP</a>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="product-logo">
+    <img src="../assets/images/staraid_logo.png" alt="StarAID" onerror="this.outerHTML='<div class=\'product-logo-text\'>Star<span style=\'color:#f60;\'>AI</span>D</div><div class=\'product-logo-sub\'>DATA-CENTRIC MLOPS</div>'" />
+  </div>
+
+  <h2 style="text-align:center;">StarAID Suite</h2>
+  <div style="text-align:center;">
+    <span class="release-badge">⏱ 2025년 출시 예정(개발중)</span>
+  </div>
+
+  <img src="../assets/images/pd01-01.jpg" alt="StarAID Suite" style="width:100%;border-radius:8px;margin-bottom:24px;" />
+
+  <h3>나만의 지능형 제품/서비스 개발을 쉽게 해주는<br />데이터 처리 자동화 인공지능 MLOps/FMOps 플랫폼</h3>
+  <p>딥러닝 기술을 활용하여, AI 개발자의 도움 없이 자동으로 저품질의 데이터를 고품질의 학습데이터로 변환하여 AI 모델의 성능을 향상시켜 주며, 프로젝트 팀원 간의 데이터 공유를 비롯한 AI 개발의 협업을 지원하여, 중소기업/스타트업이 저렴한 비용으로 AI 서비스를 쉽게 개발할 수 있도록 도와주는 데이터 중심(data-centric)의 자동화된 MLOps/FMOps 플랫폼입니다.</p>
+
+  <h3>기능</h3>
+  <div class="feature-list">
+    <div class="feature-item">
+      <div class="feature-icon">⚙️</div>
+      <div class="feature-body">
+        <h4>AI 학습데이터 자동 수집 및 체계적 통합 관리</h4>
+        <p>여러 곳에 흩어져 있는 조직의 다양한 데이터 자산을 수집하여 분류<br />조직별/프로젝트별/주제별/개인별 체계적 학습데이터 분류 및 관리</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🔄</div>
+      <div class="feature-body">
+        <h4>AI 학습데이터 전처리 자동화</h4>
+        <p>데이터 정제, 가공, 변환과 같은 전처리를 딥러닝 기술을 통해 자동화 → 코딩 최소화를 통한 AI 프로젝트 시간과 비용 절감<br />전처리 규칙 자체를 딥러닝으로 학습하고 지속적으로 갱신 → 고품질 학습데이터 유지를 통한 AI 모델 성능 향상</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🧠</div>
+      <div class="feature-body">
+        <h4>AI 학습데이터 증강</h4>
+        <p>다양한 Generative AI 기술을 활용하여, 부족한 고품질의 학습데이터를 저렴한 비용으로 증강 → AI 모델 성능 향상</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🤝</div>
+      <div class="feature-body">
+        <h4>AI 개발 협업 환경</h4>
+        <p>데이터 사이언티스트, 개발자, 기획자 등 AI 서비스 개발을 위한 팀 구성 및 팀 구성원들 간의 다양하고 간편한 학습데이터 공유와 커뮤니케이션<br />팀 구성원들이 데이터를 시각적으로 확인하면서 협업하는 데이터 공유 대시보드 → 데이터 중심 협업</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="../assets/images/pd01-02.jpg" alt="StarAID 특징" style="width:100%;border-radius:8px;margin:20px 0;" />
+
+  <h3>특징</h3>
+  <div class="char-list">
+    <div class="char-item">AI 서비스 개발의 80% 이상을 차지하는 학습데이터 처리 파이프라인을 자동화합니다.</div>
+    <div class="char-item">데이터 수집/저장, 메타데이터 생성, 가공/전처리 자동화</div>
+    <div class="char-item">Generative AI 및 표준화된 데이터 가공/전처리 자동화 및 학습 데이터 증강을 통한 AI 모델 성능 향상</div>
+    <div class="char-item">도메인 별 자동화 규칙 → AI 기술을 이용한 자동 최적화</div>
+    <div class="char-item">유연한 운영 환경: Cloud 뿐 아니라 on-premise에서 운영할 수 있습니다.</div>
+    <div class="char-item">Cloud 비용 절감 및 보안 강화: 데이터를 cloud로 유출하지 않습니다.</div>
+    <div class="char-item">기업 내부 시스템과의 쉬운 연계</div>
+    <div class="char-item">다양한 활용 분야 / 편리한 사용법</div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px;">
+    <img src="../assets/images/pd01-03.jpg" alt="StarAID" style="width:100%;border-radius:6px;" />
+    <img src="../assets/images/pd01-04.jpg" alt="StarAID" style="width:100%;border-radius:6px;" />
+  </div>
+  <img src="../assets/images/pd01-05.jpg" alt="StarAID" style="width:100%;border-radius:6px;margin-top:12px;" />
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <ul>
+      <li><strong style="color:#ddd;">주식회사 스타캣</strong></li>
+      <li><a href="ab04.html">주소 : 경기도 안양시 만안구 안양로 111, 경기벤처 연성대학교센터 12층</a></li>
+      <li>Tel : 010-3211-9716, Fax: 031-830-8664 &nbsp;&nbsp; E-mail : starcat@starcatai.com</li>
+      <li style="margin-top:10px;">©Starcat, Inc. All rights reserved.</li>
+    </ul>
+    <a class="footer-admin" href="login.html">
+      <span class="material-icons" style="font-size:16px;">lock</span> ADMIN
+    </a>
+  </div>
+</footer>
+
+<script>
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+navMenu.querySelectorAll(':scope > li > a').forEach(a => {
+  a.addEventListener('click', e => {
+    if (window.innerWidth <= 768) { e.preventDefault(); a.parentElement.classList.toggle('open'); }
+  });
+});
+</script>
+</body>
+</html>

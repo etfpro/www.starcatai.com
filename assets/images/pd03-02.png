@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>10PAGE - 404 Page Not Found</title>
+        <link rel="stylesheet" type="text/css" href="static/css/error.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-100">
+                    <a href="https://10page.co.kr" target="_blank" title="10page 홈페이지" class="logo_10page">
+                        <img src="static/img/logo_10page.png" />
+                        <span class="sr-only">10page 홈페이지</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row cont-wrap">
+                <div class="col-50 left">
+                    <div class="cont">
+                        <img src="static/img/txt_404.png" alt="404" />
+                        <h2>Page Not Found</h2>
+                        <p>
+                            <strong>앗! 현재 찾을 수 없는 페이지를 요청하셨습니다.</strong>
+                            없는 페이지 주소를 입력하셨거나,<br />
+                            요청하신 페이지의 주소가 변경, 삭제되어 찾을 수 없습니다.
+                        </p>
+                        <a href="javascript:history.back(-1);" id="back_btn" title="이전페이지"> 이전페이지 </a>
+                    </div>
+                </div>
+                <div class="col-50 right">
+                    <img src="static/img/visual_404.png" alt="연결되지 않는 페이지 이미지" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100">
+                    <div class="tenpage">
+                        <p>
+                            홈페이지가 없다고 실망하지 마세요.<br class="visible-xs" />
+                            멋진 홈페이지를 쉽고 빠르게 만들어드립니다.
+                        </p>
+                        <a href="https://10page.co.kr" target="_blank" id="tenpage_btn" title="10page 홈페이지">바로가기</a>
+                    </div>
+                </div>
+                <div class="col-100">
+                    <div class="copyright">
+                        <p>COPYRIGHT&copy; <span>MAILPLUG</span> INC. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

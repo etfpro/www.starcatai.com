@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채용공고 - Starcat, Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .board-empty { text-align: center; padding: 60px 0; color: #999; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="../index.html" class="navbar-logo">
+      <img src="../assets/images/logo.png" alt="Starcat" onerror="this.outerHTML='<span style=\'font-size:22px;font-weight:700;color:#0062cc;\'>Starcat</span>'" />
+      <img src="../assets/images/venture_logo.png" alt="벤처확인기업" onerror="this.remove()" style="height:28px;" />
+    </a>
+    <button class="navbar-toggle" id="navToggle">&#9776;</button>
+    <ul class="navbar-menu" id="navMenu">
+      <li><a href="#">회사소개</a>
+        <ul class="dropdown">
+          <li><a href="ab01.html">기업소개</a></li>
+          <li><a href="ab02.html">CEO 인사말</a></li>
+          <li><a href="ab03.html">회사 연혁</a></li>
+          <li><a href="ab04.html">오시는 길</a></li>
+        </ul>
+      </li>
+      <li><a href="#">제품</a>
+        <ul class="dropdown">
+          <li><a href="pd01.html">StarAID Suite</a></li>
+          <li><a href="pd02.html">StarAID SEMP</a></li>
+          <li><a href="pd03.html">StarAID IDP</a></li>
+        </ul>
+      </li>
+      <li><a href="#">서비스</a>
+        <ul class="dropdown">
+          <li><a href="se01.html">AI 데이터 분석 및 서비스 개발</a></li>
+          <li><a href="se02.html">AI 컨설팅 및 교육</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PR</a>
+        <ul class="dropdown">
+          <li><a href="pr01.html">스타캣 소식</a></li>
+          <li><a href="pr02.html">언론홍보</a></li>
+        </ul>
+      </li>
+      <li><a href="#">채용</a>
+        <ul class="dropdown">
+          <li><a href="rc01.html" class="active">채용공고</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <img class="bg" src="../assets/images/page_header_bg.jpg" alt="" onerror="this.remove()" />
+  <h1>채용</h1>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">HOME</a><span>›</span>
+  <a href="#">채용</a><span>›</span>
+  <strong>채용공고</strong>
+</div>
+
+<div class="page-nav">
+  <div class="page-nav-inner">
+    <a href="rc01.html" class="active">채용공고</a>
+  </div>
+</div>
+
+<div class="page-content">
+  <h2>채용공고</h2>
+  <div class="board-empty">현재 진행 중인 채용공고가 없습니다.</div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <ul>
+      <li><strong style="color:#ddd;">주식회사 스타캣</strong></li>
+      <li><a href="ab04.html">주소 : 경기도 안양시 만안구 안양로 111, 경기벤처 연성대학교센터 12층</a></li>
+      <li>Tel : 010-3211-9716, Fax: 031-830-8664 &nbsp;&nbsp; E-mail : starcat@starcatai.com</li>
+      <li style="margin-top:10px;">©Starcat, Inc. All rights reserved.</li>
+    </ul>
+    <a class="footer-admin" href="login.html">
+      <span class="material-icons" style="font-size:16px;">lock</span> ADMIN
+    </a>
+  </div>
+</footer>
+
+<script>
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+navMenu.querySelectorAll(':scope > li > a').forEach(a => {
+  a.addEventListener('click', e => {
+    if (window.innerWidth <= 768) { e.preventDefault(); a.parentElement.classList.toggle('open'); }
+  });
+});
+</script>
+</body>
+</html>
